@@ -22,4 +22,4 @@ Low / Medium / High
 
 ## Verantwortlich
 
-## Deadline
+## Deadline CODEOWNERS
