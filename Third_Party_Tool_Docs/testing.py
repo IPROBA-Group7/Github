@@ -14,6 +14,6 @@ def average(numbers: List[float]) -> float:
     return sum(numbers) / len(numbers)
 
 
-if __name__ == "__main__":
+if name == "main":
     data = [10, 20, 30]
     print(f"Average: {average(data)}")
