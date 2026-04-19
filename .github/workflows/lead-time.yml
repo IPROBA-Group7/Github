@@ -31,7 +31,7 @@ jobs:
 
       - name: Run cycle time (pro)
         env:
-          TOKEN_CUSTOM: ${{ secrets.GITHUB_TOKEN_CUSTOM }}
+          TOKEN: ${{ secrets.TOKEN_CUSTOM }}
         run: |
           python cycle_time_pro.py
 
