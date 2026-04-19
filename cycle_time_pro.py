@@ -4,6 +4,8 @@ import os
 
 TOKEN = os.getenv("TOKEN_CUSTOM")
 
+print("TOKEN CHECK:", TOKEN)   
+
 headers = {
     "Authorization": f"Bearer {TOKEN}"
 }
