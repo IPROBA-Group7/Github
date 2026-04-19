@@ -2,9 +2,15 @@ import requests
 from datetime import datetime
 import os
 
-TOKEN = os.getenv("TOKEN_CUSTOM")
 
-print("TOKEN CHECK:", TOKEN)   
+TOKEN = os.getenv("TOKEN")
+
+print("TOKEN CHECK:", TOKEN[:10] if TOKEN else "NO TOKEN")
+
+
+if not TOKEN:
+    print("KEIN TOKEN GESETZT!")
+    exit(1)
 
 headers = {
     "Authorization": f"Bearer {TOKEN}"
@@ -31,13 +37,17 @@ response = requests.post(
     headers=headers
 )
 
-print("DEBUG:", response.json())   
-
 data = response.json()
+print("DEBUG:", data)
 
 cycle_times = []
 
-print("Cycle Time (Pro):\n")
+print("\nCycle Time (Pro):\n")
+
+
+if "data" not in data:
+    print("API ERROR:", data)
+    exit(1)
 
 for issue in data["data"]["repository"]["issues"]["nodes"]:
     if issue["closedAt"]:
