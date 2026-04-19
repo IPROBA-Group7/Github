@@ -31,3 +31,10 @@ jobs:
           git add README.md
           git commit -m "update: PR lead time in README" || echo "No changes"
           git push
+
+
+       - name: Run cycle time pro
+  env:
+    GITHUB_TOKEN_CUSTOM: ${{ secrets.TOKEN_CUSTOM }}
+  run: |
+    python cycle_time_pro.py
