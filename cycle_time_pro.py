@@ -29,6 +29,8 @@ response = requests.post(
     headers=headers
 )
 
+print("DEBUG:", response.json())   
+
 data = response.json()
 
 cycle_times = []
