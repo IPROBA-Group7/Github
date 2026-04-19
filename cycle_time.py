@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import os
 
-TOKEN = os.getenv("GITHUB_TOKEN_CUSTOM")
+TOKEN = os.getenv("TOKEN_CUSTOM")
 
 headers = {
     "Authorization": f"Bearer {TOKEN}"
