@@ -36,7 +36,9 @@ Ecosystem Integration
 - Seamless workflow integration
 
 # Team
-Arunasalam Chaleb 
-Bachmann Andrin 
-Thambirasa Mathangi 
+Arunasalam Chaleb, 
+Bachmann Andrin, 
+Suljevic Edis,
+Sunna Dogus,
+Thambirasa Mathangi, 
 Tobler Yannik 
