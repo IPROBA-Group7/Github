@@ -30,11 +30,3 @@ if lead_times:
     avg = sum(lead_times) / len(lead_times)
     print(f"\nDurchschnitt: {avg:.2f} Stunden")
 
-with open("README.md", "w") as f:
-    f.write("# Github Projekt\n\n")
-    f.write("## PR Lead Time\n\n")
-    
-    if lead_times:
-        f.write(f"Durchschnitt: {avg:.2f} Stunden\n")
-    else:
-        f.write("Keine gemergten PRs gefunden\n")
