@@ -1,12 +1,12 @@
 # Default owners for the repository
-* @Dogus4133 @EdisSuljevic @iathambi @yannikt79
+* @Chaleb22 @andrin298 @iathambi @yannikt79
 
 # GitHub related configuration, templates and workflows
-.github/ @EdisSuljevic
+.github/ @yannikt79
 
 # Source code
-src/ @Dogus4133
+src/ @Chaleb22
 
 # Documentation
-docs/ @yannikt79
+docs/ @andrin298
 README.md @iathambi
