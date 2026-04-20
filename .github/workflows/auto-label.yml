@@ -1,20 +1,64 @@
-name: Auto Label PR
+name: Auto Label Issues & PRs
 
 on:
+  issues:
+    types: [opened, edited]
   pull_request:
-    types: [opened]
+    types: [opened, edited]
 
 permissions:
+  issues: write
   pull-requests: write
   contents: read
 
 jobs:
-  label:
+  label-issues:
     runs-on: ubuntu-latest
     steps:
-      - name: Add label
+      - name: Label issues by keyword
+        if: github.event_name == 'issues'
+        uses: github/issue-labeler@v3.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler-config.yml
+          enable-versioned-regex: 0
+
+  label-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add needs-review to new PRs
+        if: github.event.action == 'opened'
         uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          labels: |
-            needs-review
+          labels: needs-review
+
+      - name: Label PRs by branch name
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = context.payload.pull_request.head.ref.toLowerCase();
+            const title = context.payload.pull_request.title.toLowerCase();
+            const labels = [];
+
+            if (branch.startsWith('feature/') || title.includes('feat')) {
+              labels.push('enhancement');
+            }
+            if (branch.startsWith('fix/') || branch.startsWith('bugfix/') || title.includes('fix') || title.includes('bug')) {
+              labels.push('bug');
+            }
+            if (branch.startsWith('docs/') || title.includes('doc') || title.includes('readme')) {
+              labels.push('documentation');
+            }
+            if (branch.startsWith('chore/') || title.includes('chore') || title.includes('refactor')) {
+              labels.push('chore');
+            }
+
+            if (labels.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                labels: labels
+              });
+            }
