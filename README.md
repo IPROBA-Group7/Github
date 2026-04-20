@@ -35,4 +35,8 @@ Ecosystem Integration
 - API-based automation
 - Seamless workflow integration
 
-#Team
+# Team
+Arunasalam Chaleb 
+Bachmann, Andrin 
+Thambirasa, Mathangi 
+Tobler, Yannik 
