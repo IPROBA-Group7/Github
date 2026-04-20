@@ -1,0 +1,24 @@
+# Auto-labeler configuration for Issues
+# Format: label-name followed by regex patterns that match issue titles/bodies
+# Docs: https://github.com/github/issue-labeler
+
+bug:
+  - '(?i).*(bug|fehler|error|crash|broken|kaputt|funktioniert nicht|not working).*'
+
+enhancement:
+  - '(?i).*(feature|enhancement|improvement|verbesserung|neu|new|add|hinzuf).*'
+
+documentation:
+  - '(?i).*(doc|readme|wiki|anleitung|guide|howto|beschreibung).*'
+
+question:
+  - '(?i).*(question|frage|help|hilfe|how to|wie|warum|why|unclear|unklar).*'
+
+chore:
+  - '(?i).*(chore|refactor|cleanup|aufr|update dependencies|deps).*'
+
+urgent:
+  - '(?i).*(urgent|dringend|asap|critical|kritisch|blocker).*'
+
+needs-review:
+  - '(?i).*(review|feedback|check|prüf|please look).*'
