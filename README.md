@@ -37,6 +37,6 @@ Ecosystem Integration
 
 # Team
 Arunasalam Chaleb 
-Bachmann, Andrin 
-Thambirasa, Mathangi 
-Tobler, Yannik 
+Bachmann Andrin 
+Thambirasa Mathangi 
+Tobler Yannik 
