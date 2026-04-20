@@ -2,4 +2,4 @@
 
 ## PR Lead Time
 
-Durchschnitt: 415.93 Stunden
+Durchschnitt: 346.62 Stunden
