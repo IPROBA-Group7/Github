@@ -1,24 +1,23 @@
 # Auto-labeler configuration for Issues
-# Format: label-name followed by regex patterns that match issue titles/bodies
 # Docs: https://github.com/github/issue-labeler
 
 bug:
-  - '(?i).*(bug|fehler|error|crash|broken|kaputt|funktioniert|working).*'
+  - '[Bb]ug|[Ff]ehler|[Ee]rror|[Cc]rash|[Bb]roken|[Kk]aputt|[Ff]unktioniert|[Ww]orking'
 
 enhancement:
-  - '(?i).*(feature|enhancement|improvement|verbesserung|neu|new|add|hinzuf).*'
+  - '[Ff]eature|[Ee]nhancement|[Ii]mprovement|[Vv]erbesserung|[Nn]eu|[Nn]ew|[Aa]dd|[Hh]inzuf'
 
 documentation:
-  - '(?i).*(doc|readme|wiki|anleitung|guide|howto|beschreibung).*'
+  - '[Dd]oc|[Rr]eadme|[Ww]iki|[Aa]nleitung|[Gg]uide|[Hh]owto|[Bb]eschreibung'
 
 question:
-  - '(?i).*(question|frage|help|hilfe|how|wie|warum|why|unclear|unklar).*'
+  - '[Qq]uestion|[Ff]rage|[Hh]elp|[Hh]ilfe|[Ww]ie|[Ww]arum|[Ww]hy|[Uu]nclear|[Uu]nklar'
 
 chore:
-  - '(?i).*(chore|refactor|cleanup|aufr|dependencies|deps).*'
+  - '[Cc]hore|[Rr]efactor|[Cc]leanup|[Aa]ufr|[Dd]ependencies|[Dd]eps'
 
 urgent:
-  - '(?i).*(urgent|dringend|asap|critical|kritisch|blocker).*'
+  - '[Uu]rgent|[Dd]ringend|[Aa]sap|[Cc]ritical|[Kk]ritisch|[Bb]locker'
 
 needs-review:
-  - '(?i).*(review|feedback|check|please).*'
+  - '[Rr]eview|[Ff]eedback|[Cc]heck|[Pp]lease'
