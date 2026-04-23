@@ -21,7 +21,6 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler-config.yml
-          enable-versioned-regex: 0
 
   label-prs:
     runs-on: ubuntu-latest
