@@ -49,6 +49,8 @@ Continuous Improvement beschreibt den fortlaufenden Prozess, bei dem Arbeitsabl�
 
 Gerade in diesem Fall zeigt sich, dass externe Faktoren wie Teamwechsel oder Unterbrechungen (z. B. Feiertage oder ausfallender Unterricht) einen erheblichen Einfluss auf die Teamdynamik und Produktivität haben können. Ohne einen bewussten Verbesserungsprozess besteht die Gefahr, dass solche Probleme wiederholt auftreten.
 
+Wir haben rund eine Stunde lang diskutiert, wie wir uns jetzt organisieren wollen und was es von jedem Einzelnen braucht. Zudem haben wir auch über die Werte gesprochen, welche wir im Team leben wollen. Zum Beispiel war uns die Transparenz sehr wichtig, dass ehrlich berichtet werden soll und kein Soll-Stand präsentiert wird. So können wir garantieren, dass die Themen auch wirklich behandelt wurden und der Projektstand genau definiert werden kann. Lieber ehrlich sagen, dass keine Fortschritte erzielt wurden, als fälschlichen Fortschritt zu protokollieren.
+
 ---
 
 ## Bedeutung von Continuous Improvement
@@ -70,13 +72,13 @@ Ein zentraler Bestandteil sind regelmäßige Reflexionen, wie z. B. Retrospektiv
 Zur Vermeidung ähnlicher Probleme werden folgende Maßnahmen empfohlen:
 
 - Klarere Aufgabenverteilung nach Teamwechseln  
-- Durchführung kurzer Abstimmungsmeetings (z. B. Daily Stand-ups)  
+- Durchführung kurzer Abstimmungsmeetings (z. B. Daily Stand-ups, bei uns zwei mal wöchentlich)  
 - Aktive Überwachung der WIP-Limits  
 - Nutzung von Benachrichtigungssystemen (z. B. Slack)  
-- Regelmäßige Retrospektiven  
+- Regelmäßige Retrospektiven  (positiv wie auch negativ!)
 
 ---
 
 ## Fazit
 
-Die Ergebnisse zeigen, wie stark organisatorische Veränderungen und externe Faktoren den Entwicklungsprozess beeinflussen können und unterstreichen die Bedeutung eines stabilen, transparenten und kontinuierlich optimierten Workflows im Scrum-Kontext.
+Die Ergebnisse zeigen, wie stark organisatorische Veränderungen und externe Faktoren den Entwicklungsprozess beeinflussen können und unterstreichen die Bedeutung eines stabilen, transparenten und kontinuierlich optimierten Workflows im Scrum-Kontext. Konkret in unserem Projekt war es wichtig, sich nochmals neu zu strukturieren nach dem Abgang zweier Teammitlgieder. So haben wir uns allen nochmals vor Augengeführt wo wir hin wollen und wie wir dies effizient und sinnvoll erreichen wollen.
